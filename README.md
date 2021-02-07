@@ -64,6 +64,10 @@ Lastly, we’re going to name the printer and tie it to the printer port we crea
 cscript C:\hp\scripts\Prnmngr.vbs -a -p Our Site - Checkin Dept - Ricoh 4002 -m RICOH Aficio MP 4002 PCL 5e -r IP_192.168.1.200
 <a name="tongket"></a>
 ## Summary
+The above article I summarize the knowledge gained when using windows for my work (sys admin), hope it helps you a bit.
+
+Certainly the article there are many shortcomings, looking for sympathy and submit feedback for me to complete more.
+
 Contact me:
 - Email: manhhungbl@gmail.com
 - Skype: spyerx3
