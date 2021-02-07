@@ -81,6 +81,8 @@ The above article I summarize the knowledge gained when using windows for my wor
 
 Certainly the article there are many shortcomings, looking for sympathy and submit feedback for me to complete more.
 
+Watch Video here: 
+https://youtu.be/dClZRLYp_uM
 Contact me:
 - Email: manhhungbl@gmail.com
 - Skype: spyerx3
