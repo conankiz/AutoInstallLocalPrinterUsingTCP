@@ -47,11 +47,11 @@ Now that you’re connected remotely, essentially what you’re going to use for
 
 - (delete the printer name, in case it already exists) cscript 
 ``` sh
-C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs -d -p "HP_P2035n"
+Cscript C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs -d -p "HP_P2035n"
 ```
 - (delete the printer port, in case it already exists) 
 ``` sh
-C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnport.vbs -d -r IP_192.168.11.6
+Cscript C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnport.vbs -d -r IP_192.168.11.6
 ```
 
 NOTE: In some circumstances, you may need to delete the printer name before you are able to delete the printer port
