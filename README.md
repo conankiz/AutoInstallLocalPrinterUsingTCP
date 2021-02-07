@@ -29,7 +29,7 @@ There are several ways to do this, I chose to use Windows already installed prin
 ### Step 1: Download The Script Files and Printer driver:
 (Repeating what I referenced in my NOTES above)
 
-a. Download scripts from .
+a. Download scripts from https://raw.githubusercontent.com/conankiz/AutoInstallLocalPrinterUsingTCP/main/AutoAddPrinterLocalTCP.bat
 
 b. Download the correct printer drivers, and unpack/extract them to a drivers folder.
 <a name="step2"></a>
