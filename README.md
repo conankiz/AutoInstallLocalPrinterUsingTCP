@@ -1,6 +1,6 @@
 ## Script auto install local printer using TCP
 
-### Mục lục
+### Table of contents
 
 [I. Introduction](#Modau)
 
