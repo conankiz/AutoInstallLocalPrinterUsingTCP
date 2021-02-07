@@ -6,15 +6,16 @@ Delete The Port & Printer Name (Just In Case They Already Exist)
 
 [II. Start](#batdau)
 - [Step 1: Prepare The Files](#step1)
-- [Step 2:](#chenlinkchenanh)
-- [Step 3:](#meo)
+- [Step 2:](#step2)
+- [Step 3:](#step3)
+- [Step 4:](#step4)
 
 	
 [Tổng kết](#Tongket)
 
 ===========================
 <a name="Modau"></a>
-## I. Mở đầu
+## I. Introduction
 First I was looking for a way to install printers by IP faster than the normal "add a printer", "add a local printer", "create a new port" and that whole time-consuming process.
 
 There are several ways to do this, I chose to use Windows already installed printer commands and wrote scripts for each of the printers I was trying to install.
