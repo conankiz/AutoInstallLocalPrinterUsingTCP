@@ -24,8 +24,9 @@ There are several ways to do this, I chose to use Windows already installed prin
 There are several ways to do this, I chose to use Windows already installed printer commands and wrote scripts for each of the printers I was trying to install.
 <a name="batdau"></a>
 ## II. Start
-- File server: to share driver
+- File server: IP: 192.168.11.250 to share driver
 - Windows client : install Printer on this machine
+- HP P2035n : IP 192.168.11.6
 <a name="step1"></a>
 ### Step 1: Download The Script Files and Printer driver:
 (Repeating what I referenced in my NOTES above)
