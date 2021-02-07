@@ -5,10 +5,9 @@ Delete The Port & Printer Name (Just In Case They Already Exist)
 [I. Introduction](#Modau)
 
 [II. Start](#batdau)
-- [1. Step 1: Prepare The Files](#step1)
-- [2. Chèn link, chèn ảnh](#chenlinkchenanh)
-
-- [Mẹo](#meo)
+- [Step 1: Prepare The Files](#step1)
+- [Step 2:](#chenlinkchenanh)
+- [Step 3:](#meo)
 
 	
 [Tổng kết](#Tongket)
