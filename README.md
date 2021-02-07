@@ -37,6 +37,7 @@ b. Download the correct printer drivers, and unpack/extract them to a drivers fo
 <a name="step2"></a>
 ### Step 2: Transfer The Files To The File Server:
 Open Windows Explorer and navigate to the admin share of the remote computer: \\IP_FILE_SERVER\Share_Name
+<img src="https://i.imgur.com/XbBogIO.png">
 
 Copy the scripts and drivers folders to wherever you want on the File Server. In our example, we copy them to Share_Name\Driver\Printer
 <a name="step3"></a>
@@ -73,6 +74,7 @@ Lastly, we’re going to name the printer and tie it to the printer port we crea
 ``` sh
 Cscript "C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs" -a -p "HP_P2035n" -m "HP LaserJet P2035n" -r 192.168.11.6
 ```
+<img src="https://i.imgur.com/h2afYuP.png">
 <a name="tongket"></a>
 ## III. Summary
 The above article I summarize the knowledge gained when using windows for my work (sys admin), hope it helps you a bit.
