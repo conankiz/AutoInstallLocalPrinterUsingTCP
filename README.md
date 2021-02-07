@@ -11,7 +11,8 @@
 - [Step 4: Create The Printer Port](#step4)
 - [Step 5: Install The Printer Driver](#step5)
 - [Step 6: Tie It All Togethe](#step6)
-[Summary](#Tongket)
+
+[III.Summary](#Tongket)
 
 ===========================
 <a name="Modau"></a>
