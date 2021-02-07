@@ -25,20 +25,22 @@ set Ip_Printer=192.168.11.6
 set NamePrinter="HP LaserJet P2035n"
 set NamePrinterInstall="HP_P2035n"
 
-echo step1
+echo [*] Step 1:
 echo The first Prnmngr.vbs is to delete the printer if you're trying to add a printer with the same name
 cscript %Printingvbs%\Prnmngr.vbs -d -p %NamePrinterInstall%
 
+echo [*] Step 2:
 echo Adds a printer port with name "IP_PRINTERIP" and IP address of "PRINTERIP"
 Cscript %Printingvbs%\Prnport.vbs -a -r %Ip_Printer% -h %Ip_Printer% -o raw -n 9100
 
-echo step3
+echo [*] Step 3:
 echo Installs the printer driver, first getting the printer model and .inf file, then -h for the path to the .dll
 Cscript %Printingvbs%\Prndrvr.vbs -a -m %NamePrinter% -i %DriversFolder%\HP2030.INF -h %DriversFolder%
 
-echo step4
+echo [*]  Step4
 echo Finally giving the printer a name of "PHS - Online", linking the model and printer port
 REM Cscript %Printingvbs%\Prnmngr.vbs -a -p %NamePrintInstall% -m %NamePrinter% -r %Ip_Printer%
-Cscript %Printingvbs%\Prnmngr.vbs -a -p "HP_P2035n" -m %NamePrinter% -r %Ip_Printer%
+Cscript %Printingvbs%\Prnmngr.vbs -a -p %NamePrinterInstall% -m %NamePrinter% -r %Ip_Printer%
 
+echo +++++ Finish install %NamePrinterInstall% +++++
 @pause
