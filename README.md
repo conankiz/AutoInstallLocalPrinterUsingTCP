@@ -68,15 +68,15 @@ Now that you’re connected remotely, essentially what you’re going to use for
 NOTE: In some circumstances, you may need to delete the printer name before you are able to delete the printer port
 
 ### Step 5: Create The Printer Port
-OK, now we’re going to create the port we want to use:
-
-cscript C:\hp\scripts\Prnport.vbs -a -r IP_192.168.1.200 -h 192.168.1.200 -o raw -n 9100
-
+Adds a printer port with name "IP_PRINTERIP" and IP address of "PRINTERIP":
+``` sh
+cscript C:\System32\Printing_Admin_Scripts\en-US\Prnport.vbs -a -r IP_PRINTERIP -h IP_PRINTERIP -o raw -n 9100
+```
 ### Step 6: Install The Printer Driver
-Next, we’re going to install the driver we want to use:
-
+Getting the printer model and .inf file, then -h for the path to the .dll:
+``` sh
 cscript C:\hp\scripts\Prndrvr.vbs -a -m RICOH Aficio MP 4002 PCL 5e -i C:\hp\drivers\z53149en\disk1\oemsetup.inf -h C:\hp\drivers\z53149en\disk1
-
+```
 ### Step 7: "Tie It All Together"
 Lastly, we’re going to name the printer and tie it to the printer port we created:
 
