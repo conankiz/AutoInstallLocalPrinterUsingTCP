@@ -34,7 +34,7 @@ a. Download scripts from https://raw.githubusercontent.com/conankiz/AutoInstallL
 b. Download the correct printer drivers, and unpack/extract them to a drivers folder.
 <a name="step2"></a>
 ### Step 2: Transfer The Files To The File Server:
-Open Windows Explorer and navigate to the admin share of the remote computer: \IP_FILE_SERVER\Share_Name
+Open Windows Explorer and navigate to the admin share of the remote computer: \\IP_FILE_SERVER\Share_Name
 
 Copy the scripts and drivers folders to wherever you want on the File Server. In our example, we copy them to Share_Name\Driver\Printer
 <a name="step3"></a>
@@ -43,28 +43,28 @@ Now that you’re connected remotely, essentially what you’re going to use for
 
 (This step has been edited based on a tip provided by IUCN5406 - it's best to try to delete the printer name before deleting the port, otherwise the name may still be in use. Thanks for the info IUCN5406!)
 
-(delete the printer name, in case it already exists) cscript C:\hp\scripts\Prnmngr.vbs -d -p Our Site - Checkin Dept - Ricoh 4002
+(delete the printer name, in case it already exists) cscript C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs -d -p "HP_P2035n"
 
-(delete the printer port, in case it already exists) cscript C:\hp\scripts\Prnport.vbs -d -r IP_192.168.1.200
+(delete the printer port, in case it already exists) 
 
 NOTE: In some circumstances, you may need to delete the printer name before you are able to delete the printer port
 <a name="step4"></a>
 ### Step 4: Create The Printer Port
 Adds a printer port with name "IP_PRINTERIP" and IP address of "PRINTERIP":
 ``` sh
-cscript C:\System32\Printing_Admin_Scripts\en-US\Prnport.vbs -a -r IP_PRINTERIP -h IP_PRINTERIP -o raw -n 9100
+Cscript "C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnport.vbs" -a -r 192.168.11.6 -h 192.168.11.6 -o raw -n 9100
 ```
 <a name="step5"></a>
 ### Step 5: Install The Printer Driver
 Getting the printer model and .inf file, then -h for the path to the .dll:
 ``` sh
-cscript C:\hp\scripts\Prndrvr.vbs -a -m RICOH Aficio MP 4002 PCL 5e -i C:\hp\drivers\z53149en\disk1\oemsetup.inf -h C:\hp\drivers\z53149en\disk1
+Cscript "C:\Windows\System32\Printing_Admin_Scripts\en-US\Prndrvr.vbs" -a -m "HP LaserJet P2035n" -i "\\192.168.11.250\Source\Driver\Printer\ljP2035-gdi-pnp-win64-en\HP2030.INF" -h "\\192.168.11.250\Source\Driver\Printer\ljP2035-gdi-pnp-win64-en
 ```
 <a name="step6"></a>
 ### Step 6: "Tie It All Together"
 Lastly, we’re going to name the printer and tie it to the printer port we created:
 
-cscript C:\hp\scripts\Prnmngr.vbs -a -p Our Site - Checkin Dept - Ricoh 4002 -m RICOH Aficio MP 4002 PCL 5e -r IP_192.168.1.200
+Cscript "C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs" -a -p "HP_P2035n" -m "HP LaserJet P2035n" -r 192.168.11.6
 <a name="tongket"></a>
 ## Summary
 The above article I summarize the knowledge gained when using windows for my work (sys admin), hope it helps you a bit.
