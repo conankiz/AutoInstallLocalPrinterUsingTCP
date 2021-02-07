@@ -19,22 +19,26 @@ REM   Installs the printer driver, first getting the printer model
 REM   Finally giving the printer a name of "Printer Name", linking the model and printer port
 REM
 
-set Printingvbs="C:\Windows\System32\Printing_Admin_Scripts\en-US"
+set Printingvbs=C:\Windows\System32\Printing_Admin_Scripts\en-US
 set DriversFolder="\\192.168.11.250\Source\Driver\Printer\ljP2035-gdi-pnp-win64-en"
-set Ip_Printer="192.168.11.6"
+set Ip_Printer=192.168.11.6
 set NamePrinter="HP LaserJet P2035n"
 set NamePrinterInstall="HP_P2035n"
 
-REM The first Prnmngr.vbs is to delete the printer if you're trying to add a printer with the same name
-cscript %Printingvbs%\Prnmngr.vbs" -d -p %NamePrinterInstall%
+echo step1
+echo The first Prnmngr.vbs is to delete the printer if you're trying to add a printer with the same name
+cscript %Printingvbs%\Prnmngr.vbs -d -p %NamePrinterInstall%
 
-REM Adds a printer port with name "IP_PRINTERIP" and IP address of "PRINTERIP"
+echo Adds a printer port with name "IP_PRINTERIP" and IP address of "PRINTERIP"
 Cscript %Printingvbs%\Prnport.vbs -a -r %Ip_Printer% -h %Ip_Printer% -o raw -n 9100
 
-REM Installs the printer driver, first getting the printer model and .inf file, then -h for the path to the .dll
+echo step3
+echo Installs the printer driver, first getting the printer model and .inf file, then -h for the path to the .dll
 Cscript %Printingvbs%\Prndrvr.vbs -a -m %NamePrinter% -i %DriversFolder%\HP2030.INF -h %DriversFolder%
 
-REM Finally giving the printer a name of "PHS - Online", linking the model and printer port
-Cscript %Printingvbs%\Prnmngr.vbs" -a -p %NamePrintInstall% -m %NamePrinter% -r %Ip_Printer%
+echo step4
+echo Finally giving the printer a name of "PHS - Online", linking the model and printer port
+REM Cscript %Printingvbs%\Prnmngr.vbs -a -p %NamePrintInstall% -m %NamePrinter% -r %Ip_Printer%
+Cscript %Printingvbs%\Prnmngr.vbs -a -p "HP_P2035n" -m %NamePrinter% -r %Ip_Printer%
 
 @pause
