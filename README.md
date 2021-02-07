@@ -43,8 +43,10 @@ Now that you’re connected remotely, essentially what you’re going to use for
 
 (This step has been edited based on a tip provided by IUCN5406 - it's best to try to delete the printer name before deleting the port, otherwise the name may still be in use. Thanks for the info IUCN5406!)
 
-(delete the printer name, in case it already exists) cscript C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs -d -p "HP_P2035n"
-
+(delete the printer name, in case it already exists) cscript 
+``` sh
+C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs -d -p "HP_P2035n"
+```
 (delete the printer port, in case it already exists) 
 
 NOTE: In some circumstances, you may need to delete the printer name before you are able to delete the printer port
@@ -63,8 +65,9 @@ Cscript "C:\Windows\System32\Printing_Admin_Scripts\en-US\Prndrvr.vbs" -a -m "HP
 <a name="step6"></a>
 ### Step 6: "Tie It All Together"
 Lastly, we’re going to name the printer and tie it to the printer port we created:
-
+``` sh
 Cscript "C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs" -a -p "HP_P2035n" -m "HP LaserJet P2035n" -r 192.168.11.6
+```
 <a name="tongket"></a>
 ## Summary
 The above article I summarize the knowledge gained when using windows for my work (sys admin), hope it helps you a bit.
