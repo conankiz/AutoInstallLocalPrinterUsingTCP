@@ -10,8 +10,7 @@ Delete The Port & Printer Name (Just In Case They Already Exist)
 - [Step 3:](#step3)
 - [Step 4:](#step4)
 
-	
-[Tổng kết](#Tongket)
+[Summary](#Tongket)
 
 ===========================
 <a name="Modau"></a>
@@ -63,3 +62,5 @@ cscript C:\hp\scripts\Prndrvr.vbs -a -m RICOH Aficio MP 4002 PCL 5e -i C:\hp\dri
 Lastly, we’re going to name the printer and tie it to the printer port we created:
 
 cscript C:\hp\scripts\Prnmngr.vbs -a -p Our Site - Checkin Dept - Ricoh 4002 -m RICOH Aficio MP 4002 PCL 5e -r IP_192.168.1.200
+<a name="tongket"></a>
+## Summary
