@@ -24,7 +24,7 @@ There are several ways to do this, I chose to use Windows already installed prin
 There are several ways to do this, I chose to use Windows already installed printer commands and wrote scripts for each of the printers I was trying to install.
 <a name="batdau"></a>
 ## II. Start
-- File server to share driver
+- File server: to share driver
 - Windows client : install Printer on this machine
 <a name="step1"></a>
 ### Step 1: Download The Script Files and Printer driver:
@@ -70,7 +70,7 @@ Lastly, we’re going to name the printer and tie it to the printer port we crea
 Cscript "C:\Windows\System32\Printing_Admin_Scripts\en-US\Prnmngr.vbs" -a -p "HP_P2035n" -m "HP LaserJet P2035n" -r 192.168.11.6
 ```
 <a name="tongket"></a>
-## Summary
+## III. Summary
 The above article I summarize the knowledge gained when using windows for my work (sys admin), hope it helps you a bit.
 
 Certainly the article there are many shortcomings, looking for sympathy and submit feedback for me to complete more.
