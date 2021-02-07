@@ -1,5 +1,5 @@
 ## Script auto install local printer using TCP
-Delete The Port & Printer Name (Just In Case They Already Exist)
+
 ### Mục lục
 
 [I. Introduction](#Modau)
