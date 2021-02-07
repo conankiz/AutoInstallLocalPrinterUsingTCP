@@ -29,7 +29,7 @@ There are several ways to do this, I chose to use Windows already installed prin
 ### Step 1: Download The Script Files and Printer driver:
 (Repeating what I referenced in my NOTES above)
 
-a. Copy prnport.vbs, prndrvr.vbs and prnmngr.vbs from %WINDIR%\System32\Printing_Admin_Scripts\en-US\ (from a Windows 7 computer) to a folder called scripts.
+a. Download scripts from .
 
 b. Download the correct printer drivers, and unpack/extract them to a drivers folder.
 <a name="step2"></a>
